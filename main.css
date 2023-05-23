@@ -1,6 +1,121 @@
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 /* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: antiquewhite;
+
+}
+
+header{
+    width: 100%;
+    padding: 25px 8%;
+    background-color: antiquewhite;
+    position: sticky;
+}
+
+nav{
+    text-align: right;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.brand-logo{
+    width: 80px;
+    cursor: pointer;
+}
+
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+   
+}
+
+nav ul{
+    display: inline-block;
+    width: 100%;
+    padding: 0px 15px;  
+}
+
+nav li{
+    display: inline-block;
+    margin: 15px;
+}
+
+nav ul li a{
+    color: black;
+    color: #332E3C;
+    font-weight: 400;
+    transition: all 0.3a ease 0s;
+}
+
+nav ul li a:hover{
+    color: #4281A4;
+}
+
+main{
+    width: 100%;
+    padding: 0px 8% 0px 8%; 
+}
+
+.index-intro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.col-2{
+    flex-basis: 45%;
+    min-width: 300px;
+}
+
+.main-img{
+    max-width:100%;
+    height: auto;
+    /* padding: 50px 0; */
+}
+
+
+.col-2 h1{
+    font-family: 'Libre Bodoni', serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 65px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    text-transform: capitalize;
+}
+
+.shop-btn{
+    font-size: 20px;
+    padding: 20px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #FF5A5F;
+    transition: all 0.3s ease 0s;
+    margin-top: 25px;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    background: none;
+}
+
