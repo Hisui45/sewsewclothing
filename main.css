@@ -305,6 +305,10 @@ button{
 
 }
 
+.index-releases a{
+   color: #332E3C;
+}
+
 .index-releases-header{
    text-align: center;
    /* grid-column: 1/5;
