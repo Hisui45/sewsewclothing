@@ -18,15 +18,20 @@ body{
 
 header{
    width: 100%;
-   padding: 25px 8%;
+   padding: 5px 5%;
+   display: grid;
+   grid-template-columns: repeat(2, 50%);
 }
 
 .index-header{
    width: 100%;
-   display: grid;
    padding: 0;
    grid-template-columns: 15% 85%;
 
+}
+
+.index-header a{
+   align-self: center;
 }
 
 
@@ -305,6 +310,14 @@ button{
 
 }
 
+@media screen and (min-width:768px) {
+   .index-releases{
+
+      flex-wrap:wrap;
+   }
+   
+}
+
 .index-releases a{
    color: #332E3C;
 }
@@ -348,7 +361,8 @@ button{
 
    
 }
-.index-releases figure{
+
+.index-releases a{
    /* width: 30%; */
    /* background-color: #63b1cd2b; */
    /* background-color: whitesmoke;
@@ -358,6 +372,7 @@ button{
    /* grid-row: 2/3; */
    margin: 50px;
    min-width: 258px;
+   max-width: 370px;
    min-height: 249px;
    text-align: center;
   
@@ -369,7 +384,7 @@ button{
    width: 100%;
    position: relative;
    bottom: 0;
-   cursor: pointer;
+   /* cursor: pointer; */
    margin-left: auto;
    margin-right: auto;
 }
@@ -416,6 +431,20 @@ button{
    border-radius: 8px 8px 0px 0px;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
    cursor: pointer;
+}
+
+@media screen and (max-width:556px) {
+   .product-apparel-figure{
+      flex-basis: 87%;
+      max-width: 350px;
+
+   }
+
+   .product-apparel h1{
+      flex-basis: 100%;
+      margin-bottom:15%;
+   }
+   
 }
 
 .image-container{
