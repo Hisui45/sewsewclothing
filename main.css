@@ -54,14 +54,13 @@ nav{
    text-align: right;
    display: flex;
    align-items: center;  
-   padding-top: 30px;
+   padding-top: 15px;
 }
 
 .brand-logo-a{
    align-self: center;
-   padding-top: 30px;
+   padding-top: 15px;
 }
-
 
 .brand-logo{
    width: 50px;
@@ -77,9 +76,17 @@ nav{
 
 @media screen and (min-width:556px){
 
+   nav{ 
+      padding-top: 30px;
+   }
+
+   .brand-logo-a{
+      align-self: center;
+      padding-top: 30px;
+   }
+
    .brand-logo{
-      width: 70px;
-      
+      width: 70px;  
    }
 
    .cart-icon{
@@ -390,9 +397,15 @@ button{
    /* padding: 0px 8%; */
    padding-left: 5%;
    padding-right: 5%;
-   padding-bottom: 16px;
+   padding-bottom: 8px;
 }
 
+@media screen and (min-width:556px){
+
+   .products-header{
+      padding-bottom: 16px
+   }
+}
 
 @media screen and (min-width:1440px){
    .product-apparel{
