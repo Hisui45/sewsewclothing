@@ -362,6 +362,7 @@ button{
 
 .product-apparel{
    padding: 50px 4%;
+   padding-bottom: 0px;
    background-color: white;
    width:100%;
    /* text-align: center; */
@@ -382,6 +383,7 @@ button{
 @media screen and (min-width:1440px){
    .product-apparel{
       padding: 4% 4%;
+      padding-bottom: 0px;
    }
 
    .products-header{
