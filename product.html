@@ -13,12 +13,14 @@
             <img class="brand-logo" src="img/logo 2-cropped.svg">
         </a>
         <nav>
-            <ul>
+            <ul id="menuItems">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
             </ul> 
-            <button class="btn-icon"><img class="cart-icon" src="img/cart.svg"></button>  
+            <button class="btn-icon" ><img class="cart-icon" src="img/cart.svg"></button> 
+            <button class="menu-icon" onclick="menutoggle()"><img class="menu-icon" src="img/menu-icon.svg"></button> 
+           
         </nav>
         
     </header>
@@ -168,4 +170,22 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa rem inventore iure perspiciatis incidunt molestiae ut quo nihil minus beatae tempora accusamus quam aut, sapiente, quaerat delectus debitis aperiam!</p>
     </footer> -->
 </body>
+
+<script>
+    var menuItems = document.getElementById("menuItems");
+
+    menuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px"){
+
+            menuItems.style.maxHeight = "200px"
+
+        }else{
+
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
 </html>
