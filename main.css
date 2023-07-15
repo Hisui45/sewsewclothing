@@ -19,41 +19,6 @@ body{
 header{
    width: 100%;
    display: grid;
-   grid-template-columns: repeat(2, 50%);
-}
-
-header{
-   width: 100%;
-   grid-template-columns: 15% 85%;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&family=Nanum+Gothic:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
-/* RESET */
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   text-decoration: none;
-   list-style: none;
-}
-
-body{
-   font-family: 'Nanum Gothic', sans-serif;
-   background-color: antiquewhite;
-
-}
-
-/* header{
-   width: 100%;
-   
-   grid-template-columns: repeat(2, 50%);
-} */
-
-header{
-   width: 100%;
-   display: grid;
    grid-template-columns: 15% 85%;
    
    
@@ -74,17 +39,17 @@ header{
 
 .index-intro{
    min-height: 100vh;
-   padding-right: 4%;
-   padding-left: 4%;
+   padding-right: 2%;
+   padding-left: 2%;
 }
 
 nav{
    padding-right: 0px; 
-   justify-content: flex-end;
    text-align: right;
    display: flex;
-   align-items: center;  
-   padding-top: 15px;
+   justify-content: flex-end;
+   align-items:center;
+  
 }
 
 .brand-logo-a{
@@ -100,14 +65,26 @@ nav{
 
 .cart-icon{
    /* display: none; */
-   width: 35px;
+   width: 40px;
+   padding: 5px;
    cursor: pointer;
    margin-right: 10px;
 }
 
 .menu-icon{
-   width: 40px;
+   width: 45px;
+   padding: 5px;
    cursor: pointer;
+}
+
+.cart-icon:hover{
+   background-color: #0000007e;
+   border-radius: 20px;
+}
+
+.menu-icon:hover{
+   background-color: #0000007e;
+   border-radius: 20px;
 }
 
 
@@ -142,12 +119,17 @@ nav ul{
    display: inline-block;
    width: 100%;
    padding-right: 8px;
-   margin-bottom: 40px;
+   margin-bottom: 18px;
 }
 
 nav li{
    display: inline-block;
-   margin: 15px;
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+.menuhr{
+   display: none;
 }
 
 nav ul li a{
@@ -193,10 +175,20 @@ nav ul li a:hover{
       width: 100%;
       overflow: hidden;
       transition: max-height 0.5s;  
+      padding-right: 0px;
    }
 
    nav li{
       display: block;
+      margin:13px;
+      padding-right: 8px;
+   }
+
+   .menuhr{
+      display: block;
+      height: 0.9px;
+      background-color: #332E3C;
+      border: none;
    }
    
 }
@@ -347,14 +339,19 @@ button{
    padding: 50px 1%;
    background-color: white;
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+   flex-direction: column;
    justify-content: center;
-
 }
 
 
-.index-releases a{
+.releases-div{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.releases-div a{
    color: #332E3C;
 }
 
@@ -366,34 +363,7 @@ button{
    text-decoration-color: #FF5A5F;
 }
 
-/* .index-releases-header::after, .index-releases-header::before {
-   content: '';
-   background: #FF5A5F;
-   width: 55px;
-   height:5px;
-   position: absolute;
-   
-}
-
-.index-releases-header::after{
-   transform: translateY(+260%) translateX(+4%);
-}
-
-.index-releases-header::before{
-
-   transform: translateX(-105%) translateY(+260%);
-}
-
-
-
-@media screen and (min-width:768px) {
-   .index-releases-header::after, .index-releases-header::before{
-      width: 115px;
-   }
-   
-} */
-
-.index-releases a{
+.releases-div a{
    flex-basis:100%;
    margin-top: 50px;
    margin-inline: 15px;
@@ -403,19 +373,24 @@ button{
 }
 
 @media screen and (min-width: 768px){
-   .index-releases a{
+
+   .releases-div{
+      flex-direction: row;
+   }
+   .releases-div a{
       margin-inline: 20px;
-      flex-basis: 28%;
+      flex-basis: 35%;
+   
    }
 }
 
 @media screen and (min-width: 1440px){
-   .index-releases a{
+   .releases-div a{
       margin-inline: 35px;
    }
 }
 
-.index-releases img{
+.releases-div img{
    width: 100%;
    position: relative;
    bottom: 0;
@@ -424,7 +399,7 @@ button{
    margin-right: auto;
 }
 
-.index-releases figcaption{
+.releases-div figcaption{
    margin-top: 10px;
    font-weight: 700;
 
@@ -435,18 +410,18 @@ button{
 
 .product-apparel{
    padding: 50px 4%;
-   padding-bottom: 0px;
+   /* padding-bottom: 0px; */
    background-color: white;
    width:100%;
-   /* text-align: center; */
    min-height:580px;
    display: flex;
+   justify-content: center;
    flex-wrap: wrap;
-   justify-content: space-around;
+
 }
 
 .products-header{
-   padding-right: 4%;
+   /* padding-right: 4%; */
    padding-left: 4%;
    /* padding-bottom: 8px; */
 }
@@ -461,12 +436,12 @@ button{
 @media screen and (min-width:1440px){
    .product-apparel{
       padding: 4% 4%;
-      padding-bottom: 0px;
+      padding-bottom: 50px;
    }
 
    .products-header{
-      padding-left: 5%;
-      padding-right: 8%;
+      /* padding-left: 5%;
+      padding-right: 8%; */
       padding-bottom: 30px;
    }
 }
@@ -489,31 +464,29 @@ button{
 
 .product-apparel-figure{
    flex-basis: 87%;
-   max-width: 350px;
+   max-width: 300px;
    margin-bottom: 5%;
    border-radius: 8px 8px 0px 0px;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
    cursor: pointer;
+   padding: 15px;
+   margin: 10px;
 }
 
 @media screen and (min-width:556px) {
    .product-apparel-figure{
-      flex-basis: 30%;
-      max-width: 295px;
+      flex-basis: 87%;
+      max-width: 290px;
+      padding: 10px;
    }
-
-   /* .product-apparel h1{
-      flex-basis: 100%;
-      margin-bottom:4%;
-      margin-left: 2%;
-   } */
   
 }
 
 @media screen and (min-width:768px) {
-   .product-apparel-figure{
-      flex-basis: 23%;
-   }
+   /* .product-apparel-figure{
+      flex-basis: 28%;
+
+   } */
 
    .product-apparel h1{
       flex-basis: 100%;
@@ -528,6 +501,7 @@ button{
    border-radius: 8px 8px 0px 0px;
    border-bottom: 3px solid #FF5A5F;
    padding: 3%;
+
 
 }
 
@@ -551,11 +525,38 @@ button{
 
 /* footer */
 footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
    background-color: #332E3C;
-   width: 100%;
+   padding: 4%;
+   padding-bottom: 10px;
+   color: whitesmoke;
 }
 
-/* footer img{
-   
-} */
+@media screen and (min-width: 768px) {
+   footer{
+      padding: 2%;
+      padding-bottom: 10px;
+   } 
+}
+
+footer img{
+   cursor: pointer;
+   width: 100%;
+   max-width: 80px;
+}
+
+footer li{
+   margin-bottom: 10px;
+}
+
+footer ul{
+   flex-basis: 70%;
+}
+footer a{
+   color: white;
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
 

@@ -19,13 +19,14 @@
 
                     <ul id="menuItems">
                         <li><a href="index.html">Home</a></li>
+                        <hr class="menuhr">
                         <li><a href="product.html">Products</a></li>
+                        <hr class="menuhr">
                         <li><a href="about.html">About</a></li>
                     </ul> 
-                    <button class="btn-icon" ><img class="cart-icon" src="img/cart.svg"></button>
 
-                    
-                    <button class="menu-icon" onclick="menutoggle()"><img class="menu-icon" src="img/menu-icon.svg"></button> 
+                    <img class="cart-icon" src="img/cart.svg">
+                    <img onclick="menutoggle()" class="menu-icon" src="img/menu-icon.svg">
                       
                 </nav>
                 
@@ -45,28 +46,43 @@
         <!-- new rleases  -->
         <section class="index-releases">
             <h2 class="index-releases-header">New Releases</h2>
-            <a href="product.html#9">
-                <figure class="product-figure">
-                    <img src="img/product photos/im a 6/product display/im a 6 gray.png">
-                    <figcaption><span>I'M A 6 (AT BEST)</span></figcaption>
-                </figure>
-            </a>
-            <a href="product.html#3">
-                <figure class="product-figure">
-                    <img src="img/product photos/just fine/product display/just fine pink.png">
-                    <figcaption><span>JUST FINE</span></figcaption>
-                </figure>
-            </a>
-            <a href="product.html#2">
-                <figure class="product-figure">
-                    <img src="img/product photos/i should/product display/i should blue.png">
-                    <figcaption><span>I SHOULD &amp; I WON'T</span></figcaption>
-                </figure>
-            </a>
+            <div class="releases-div">
+                <a href="product.html#9">
+                    <figure class="product-figure">
+                        <img src="img/product photos/im a 6/product display/im a 6 gray.png">
+                        <figcaption><span>I'M A 6 (AT BEST)</span></figcaption>
+                    </figure>
+                </a>
+                <a href="product.html#3">
+                    <figure class="product-figure">
+                        <img src="img/product photos/just fine/product display/just fine pink.png">
+                        <figcaption><span>JUST FINE</span></figcaption>
+                    </figure>
+                </a>
+                <a href="product.html#2">
+                    <figure class="product-figure">
+                        <img src="img/product photos/i should/product display/i should blue.png">
+                        <figcaption><span>I SHOULD &amp; I WON'T</span></figcaption>
+                    </figure>
+                </a>
+            </div>
+            
         </section>
     </main>
-    <!-- <footer><img class="brand-logo" src="img/logo 2-cropped.svg"></footer> -->
+    <footer>
+        <ul>
+            <li>Designed by Jade Locke</li>
+            <li>Product Design and Concepts by <a href="https://www.youtube.com/@elyse_myers">@elyse_myers</a></li>
+        </ul>
+        </section>
+        <a href="https://hisui45.github.io/jadelocke-portfolio/index.html">
+            <img class="portfolio-logo" src="img/portfolio logo.svg">
+        </a>
+       
+        
+    </footer>
 </body>
+
 
 <script>
     var menuItems = document.getElementById("menuItems");
