@@ -32,15 +32,13 @@ header{
    }
    .index-intro{
    display: grid;
-}
-
-   
+   }
 }
 
 .index-intro{
    min-height: 100vh;
-   padding-right: 2%;
-   padding-left: 2%;
+   padding-right: 4%;
+   padding-left: 4%;
 }
 
 nav{
@@ -422,7 +420,7 @@ button{
 
 .products-header{
    /* padding-right: 4%; */
-   padding-left: 4%;
+   /* padding-left: 4%; */
    /* padding-bottom: 8px; */
 }
 
