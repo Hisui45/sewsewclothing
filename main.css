@@ -131,13 +131,12 @@ nav li{
 }
 
 nav ul li a{
-   color: #332E3C;
-   font-weight: 400;
+   color: #000000;
    transition: all 0.3a ease 0s;
 }
 
 nav ul li a:hover{
-   color: #4281A4;
+   color: #FF5A5F;
 }
 
 @media screen and (min-width:951px){
@@ -419,7 +418,7 @@ button{
 }
 
 .products-header{
-   padding-right: 8%;
+   padding-right: 4%;
    padding-left: 4%;
    /* padding-bottom: 8px; */
 }
